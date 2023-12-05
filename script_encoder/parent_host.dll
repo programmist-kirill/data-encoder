@@ -1,0 +1,36 @@
+using System.Diagnostic;
+using System;
+
+class scripyt
+
+static void Main(string[] args)
+        {
+            int squareheight,area,perimeter;
+            Console.Write("What is the height of your square? :");
+            squareheight = Convert.ToInt32(Console.ReadLine());
+            area = squareheight * squareheight;
+            perimeter = 4 * squareheight;
+            Console.WriteLine("Area : {0}\nPerimeter : {1}",area,perimeter); //   "\n"--> new line
+            Console.ReadKey();
+        }
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1,number2,number3,avarage;
+
+            Console.Write("Enter 1st number :");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter 2nd number :");
+            number2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter 3rd number :");
+            number3 = Convert.ToInt32(Console.ReadLine());
+
+            avarage = (number1 + number2 + number3) / 3;
+
+            Console.Write("Avarage of three numbers is {0}",avarage);
+
+            Console.ReadKey();
+        }
+    }
